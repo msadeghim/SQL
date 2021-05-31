@@ -1,5 +1,5 @@
 # SQL
-## all subset of a set (power set)
+### all subset of a set (power set)
 ## MRR
 ## MRR rolling
 ## MAU
