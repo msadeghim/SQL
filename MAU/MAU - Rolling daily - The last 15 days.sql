@@ -7,7 +7,6 @@ with f as (
 ,a as (
     select day::date as day,
            user_id,
-          min(paid_at) as ff,
            min(rnk) as rnk,
            count(count(*)) over(partition by user_id order by day::date
                range between interval '30 day' preceding and interval '30 day' preceding ) as backward
@@ -16,7 +15,7 @@ with f as (
     group by day::date, user_id
 )
 ,b as (
-    select day, min(ff) as fs, max(ff) as fe,
+    select day,
            count(*) as active,
            count(*) filter ( where backward > 0 ) as retained,
            count(*) filter ( where rnk =1 ) as new
