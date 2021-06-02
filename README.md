@@ -1,11 +1,18 @@
 # SQL
 ## Related to Business
-MRR
-MRR rolling
-MAU
-MAU rolling
-Apriori
+* MRR (Revenue Growth) Metrics
+* MRR rolling
+* MAU (User Growth) Metrics
+* MAU rolling
+* DAU/MAU Rolling (Stickness Metrics)
+* Apriori
+* RFM
+* Referral tree
 
 ## miscellaneous
-all subset of a set (power set)
+* All subset of a set (power set)
+* Permutation
+* CAGR
+* Maze Solver
+* 
 
